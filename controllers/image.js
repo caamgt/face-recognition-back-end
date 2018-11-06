@@ -1,8 +1,8 @@
 const Clarifai = require('clarifai');
 
+// API_CLARIFAI es una varibale de ambiente en heroku.
 const app = new Clarifai.App({
-	// API_CLARIFAI es una varibale de ambiente en heroku.
- apiKey: API_CLARIFAI
+ apiKey: API_CLARIFAI,
 })
 
 const handleApiCall = (req, res) => {
